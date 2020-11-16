@@ -64,8 +64,8 @@ let arr1 = [1,2,3,4,5,6,7];
 let arr2 = [...arr1];
 arr2.push(true)
 
-console.log(arr2)
-console.log(arr1)
+// console.log(arr2)
+// console.log(arr1)
 
 // function add(nums) {
 //     console.log(nums);
@@ -94,3 +94,49 @@ function add3(...nums) {
 }
 
 add3(4, 5, 7, 8, 12);
+
+function add4(numArray= []) {
+    let total = 0;
+    numArray.forEach(element => { 
+        total+=element;
+    });
+    console.log(total);
+}
+add4();
+add4([4, 5, 9, 10]);
+
+let numArray = [1, 2, 3, 4, 5];
+
+console.log(numArray.indexOf(0));
+console.log(numArray.includes(0));
+
+// if (false) {
+//     let example = 5;
+// }
+
+// console.log(example);
+
+// var example;
+
+// if (false) {
+//     example = 5;
+// }
+
+// const example = 5;
+// example = 10;
+// const example = [];
+// example.push(9);
+// console.log(example);
+
+const example = {};
+example.firstName = 'scpark';
+
+console.log(example);
+
+import {data} from './test2.js';
+
+let updatedData = data;
+
+updatedData.push(50);
+console.log(data);
+console.log(updatedData);
