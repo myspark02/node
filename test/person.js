@@ -1,11 +1,27 @@
+// const person = {
+//     name : 'John Doe', 
+//     age : 30
+// }
+
+
+// module.exports = person
+
+
+// console.log(__dirname, '\n', __filename);
 
 class Person {
-    constructor(name) {
+    constructor(name, age) {
         this.name = name;
+        this.age = age;
     }
-    walk() {
-        console.log('walk');
+
+    greeting() {
+        console.log(`My name is ${this.name} and ${this.age}`);
     }
 }
 
-module.exports.Person=Person
+// var p = new Person('gildong', 19);
+// p.greeting()
+
+module.exports = Person;
+
