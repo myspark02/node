@@ -17,6 +17,10 @@ app.get('/name', (req, res) => {
     res.send(`Hell there with id of ${id}`)
 })
 
-app.listen(port, () => {
+let server = app.listen(port, () => {
     console.log('express server is running...')
+})
+
+server.on('SIGTERM', () => {
+    console.log('express server is being terminated...')
 })
