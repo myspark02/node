@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index",
-    "dev": "nodemon index"
+    "dev": "nodemon index",
+    "mongo": "nodemon ./mongodb/app.js"
   },
   "keywords": [
     "node.js"
@@ -14,10 +15,14 @@
   "author": "scpark",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.19.0",
     "chalk": "^4.1.0",
+    "cors": "^2.8.5",
     "cowsay": "^1.4.0",
+    "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "inquirer": "^8.0.0",
+    "mongoose": "^5.12.3",
     "ncu": "^0.2.1",
     "node-fetch": "^2.6.1",
     "npm-check-updates": "^11.3.0",
