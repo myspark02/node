@@ -1,7 +1,8 @@
 const address = {
     street: 'Oksanro', 
     city: 'Daegu', 
-    country: 'Korea'
+    country: 'Korea',
+    zip : '1234'
 };
 
 // const street = address.street;
@@ -18,3 +19,6 @@ console.log(st);
 
 const {city:c} = address;
 console.log(c);
+
+const {zip} = address;
+console.log(zip)
