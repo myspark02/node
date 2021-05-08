@@ -7,7 +7,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "cross-env NODE_ENV=production node ./mongodbNOAuth/app.js",
     "dev": "cross-env NODE_ENV=development nodemon ./mongodbNOAuth/app.js",
-    "mongo": "nodemon ./mongodb/app.js"
+    "mongo": "nodemon ./mongodb/app.js", 
+    "chat" : "node ./chat/server.js",
+    "dchat" : "nodemon ./chat/server.js"
   },
   "keywords": [
     "node.js"
@@ -36,6 +38,7 @@
     "passport": "^0.4.1",
     "passport-google-oauth20": "^2.0.0",
     "progress": "^2.0.3",
+    "socket.io": "^4.0.1",
     "typescript": "^4.2.3",
     "uuid": "^8.3.2"
   },
